@@ -18,6 +18,25 @@ body {
     }
 }
 
+.row {
+    display: block;
+    margin-left: -15px;
+    margin-right: -15px;
+    font-size: 0;
+
+    [class^='col-'] {
+        padding-left: 15px;
+        padding-right: 15px;
+        display: inline-block;
+        font-size: initial;
+        vertical-align: top;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+}
+
 p {
     font-size: 12px;
 }
@@ -92,7 +111,7 @@ section {
         font-family: 'Roboto Slab';
         text-transform: uppercase;
         font-weight: 500;
-        margin: 0 0 10px;
+        margin: 0 0 15px;
         opacity: 0.5;
     }
 }
@@ -146,6 +165,8 @@ main {
         
         li {
             margin-bottom: 5px;
+            font-size: 10px;
+            line-height: 1.2em;
         }
     }
 }
@@ -173,16 +194,21 @@ main {
     margin: 0 0 2px;
 }
 
+
 .job-title {
     font-weight: 600;
     font-size: 14px;
 }
 
 .company {
-    font-size: 14px;
+    font-size: 12px;
+    font-weight: 500;
+    display: inline-block;
 }
 
 .company-address {
+    font-size: 10px;
+    display: inline-block;
     opacity: 0.5;
 }
 
